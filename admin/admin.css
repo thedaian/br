@@ -1,0 +1,68 @@
+input.button {
+ color: #000000;
+ background-color: #7878ff;
+ font-weight: bold;
+ border: 1px #4040aa solid;
+}
+
+a:link {
+color: #3034ff;
+}
+a:visited {
+color: #3034ff;
+}
+a:hover{
+color: #000000;
+}
+a:active {
+color: #000000;
+}
+
+#menu {
+  width: 100%;
+}
+
+#menu td{
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+	font-size: xx-large;
+}
+
+h3 {
+  text-align: center;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+
+.text {
+  font-weight: bold;
+}
+
+.center {
+  text-align: center;
+}
+
+.padded {
+  padding-left: 5px;
+	padding-right: 5px;
+}
+
+.margin {
+  margin-left: 50px;
+}
+
+#item_list {
+	float: right;
+	margin-right: 200px;
+	max-height: 550px;
+	width: 200px;
+	overflow: auto;
+	padding: 5px;
+	border: 1px solid black;
+}
+#form {
+	margin-left: 35%;
+}

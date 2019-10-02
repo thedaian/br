@@ -1,0 +1,2 @@
+<h4>ERROR</h4>There are characters that haven't been assigned weapons in this game. All characters must have weapons before you can begin the game.<br/><br/>
+<a href="manage/list/{WHICH}">Assign Weapons</a>

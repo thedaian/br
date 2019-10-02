@@ -1,0 +1,40 @@
+Options +FollowSymlinks
+ErrorDocument 404 /br/index.html
+RewriteEngine on
+RewriteRule	 ^logout.php	index.php?action=logout [L]
+RewriteRule ^login.php	index.php?action=login [L]
+
+RewriteRule ^user/([A-Za-z]*)$	user.php?action=$1 [L]
+RewriteRule ^user/([A-Za-z]*)/([0-9]*)$	user.php?action=$1&which=$2 [L]
+RewriteRule ^user/([A-Za-z]*)/([0-9]*)/([0-9]*)$	user.php?action=$1&which=$2&id=$3 [L]
+
+RewriteRule ^game/([A-Za-z]*)$	games.php?action=$1 [L]
+RewriteRule ^game/([A-Za-z]*)/([0-9]*)$	games.php?action=$1&which=$2 [L]
+
+RewriteRule ^manage/([0-9]*)$	manage.php?which=$1 [L]
+RewriteRule ^manage/([A-Za-z]*)/([0-9])$	manage.php?action=$1&which=$2 [L]
+RewriteRule ^manage/([A-Za-z]*)/([0-9])/([0-9])$	manage.php?action=$1&which=$2&who=$3 [L]
+
+RewriteRule ^character/([A-Za-z]*)$	character.php?action=$1 [L]
+RewriteRule ^character/([A-Za-z]*)/([0-9])$	character.php?action=$1&which=$2 [L]
+
+RewriteRule ^messages/([0-9]*)$	messages.php?which=$1 [L]
+RewriteRule ^messages/([0-9]*)/([0-9]*)$	messages.php?which=$1&from=$2 [L]
+RewriteRule ^messages/([A-Za-z]*)/([0-9]*)$	messages.php?action=$1&which=$2 [L]
+RewriteRule ^messages/new/([0-9]*)/([0-9]*)/([0-9]*)$ messages.php?action=new&which=$1&from=$2&to=$3
+RewriteRule ^messages/delete/([0-9]*)/([0-9]*)$ messages.php?action=delete&id=$1&type=$2&to=$3
+
+RewriteRule ^weapons/?$	weapons.php [L]
+RewriteRule ^weapons/([A-Za-z]*)$	weapons.php?action=$1 [L]
+RewriteRule ^weapons/([A-Za-z]*)/([0-9])$	weapons.php?action=$1&which=$2 [L]
+
+RewriteRule ^gameInfo/([0-9]*)$	gameInfo.php?which=$1 [L]
+
+RewriteRule ^map/([0-9])$	map.php?which=$1 [L]
+RewriteRule ^map/([A-Za-z]*)/([0-9])$	map.php?action=$1&which=$2 [L]
+
+RewriteRule ^startgame/([0-9])$	startgame.php?which=$1 [L]
+
+RewriteRule ^run/([0-9])$	run.php?which=$1 [L]
+RewriteRule ^run/([A-Za-z]*)/$	run.php?action=$1 [L]
+RewriteRule ^run/([A-Za-z]*)/([0-9])$	run.php?action=$1&which=$2 [L]

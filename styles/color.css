@@ -1,0 +1,78 @@
+body {
+	background-color: #000;
+	color: #e00;
+	font-family: "lucida sans", sans-serif;
+}
+
+#header {
+	background-image: url("../images/ui/br_logo.gif");
+	background-position: top-left;
+	background-repeat: no-repeat;
+}
+
+hr {
+	color: #e00;
+	background-color: #e00;
+}
+
+#main_menu li a {
+	font-size: small;
+	font-weight: bold;
+	color: #c00;
+}
+
+#main_menu li a:hover {
+	color: #ccc;
+}
+
+form input {
+	color: #c00;
+	font-weight: bold;
+	background-color: #222;
+	border: 1px solid #c00;
+}
+
+form select {
+	color: #c00;
+	font-weight: bold;
+	background-color: #222;
+	border: 1px solid #e00;
+}
+
+form textarea {
+	color: #c00;
+	font-weight: bold;
+	background-color: #222;
+	border: 1px solid #c00;
+}
+
+#side_menu li a {
+	font-size: small;
+	font-weight: bold;
+	color: #c00;
+}
+
+#side_menu li a:hover {
+	color: #ccc;
+}
+
+table.list {
+	border: 1px solid #700;
+}
+
+table.list td, th {
+	border: 1px solid #900;
+}
+
+td.text {
+	font-weight: bold;
+}
+
+a {
+	font-weight: bold;
+	color: #ccc;
+}
+
+a:hover {
+	color: #c00;
+}

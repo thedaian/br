@@ -1,0 +1,31 @@
+#Disable rewriting (incompatible with Options -All)
+<IfModule mod_rewrite.c>
+  RewriteEngine off
+</IfModule>
+
+#Disable PHPs script execution engine
+<IfModule mod_php4.c>
+  php_flag engine 0
+</IfModule>
+<IfModule mod_php5.c>
+  php_flag engine 0
+</IfModule>
+
+#Disable all CGI and SSI and other dangerous options
+Options -All -MultiViews
+
+#Deny everything by default
+Order Allow,Deny
+
+#Only allow these types of file
+<FilesMatch "\.(gif|jpe?g|png)$">
+  Order Deny,Allow 
+	Allow from all
+</FilesMatch>
+
+#Deny non-GET requests
+<LimitExcept GET>
+  Order Allow,Deny 
+</LimitExcept>
+
+LimitRequestBody 1024000

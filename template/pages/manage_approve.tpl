@@ -1,0 +1,2 @@
+{NAME} has been approved, and has been added to the player list for this game.
+Please <a href="manage/list/{WHICH}">give them a weapon</a> (you cannot start the game until everyone has a weapon assigned to them).

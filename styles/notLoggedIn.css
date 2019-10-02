@@ -1,0 +1,33 @@
+#content {
+	margin-left: 30px;
+	margin-right: 20px;
+}
+
+#login {
+	margin: 0 20px 50px 0;
+	float: left;
+}
+
+form input {
+	margin-top: 2px;
+}
+
+#login label {
+	width: 90px;
+	height: 16px;
+	padding: 1px 0;
+	display: block;
+	float: left;
+}
+
+#register {
+	margin: 20px 20px 50px;
+}
+
+#register label {
+	width: 150px;
+	height: 16px;
+	padding: 1px 0;
+	display: block;
+	float: left;
+}
